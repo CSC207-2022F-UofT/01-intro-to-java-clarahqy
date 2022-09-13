@@ -144,7 +144,7 @@ public class Basics {
          */
         StringBuilder ret = new StringBuilder();
         String[] temp = to_split.split(" ");
-        for (int i = 0; i <= temp.length; i++){
+        for (int i = 0; i < temp.length; i++){
             ret.append(temp[i].charAt(0));
         }
         // Fill in the rest of the body here
@@ -169,7 +169,7 @@ public class Basics {
      */
     public static int oddSum(int[] arr) {
         int current_sum = 0;
-        for (int i = 1; i <= arr.length; i += 2){
+        for (int i = 1; i < arr.length; i += 2){
             current_sum += arr[i];
         }
         /* TODO (Task 5): Complete this method body using a for-loop.
